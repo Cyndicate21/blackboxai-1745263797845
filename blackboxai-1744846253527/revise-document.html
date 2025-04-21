@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D.A.R.T.S - Revise Documents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+    <script src="nav.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-red-600 shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-white text-2xl font-bold">D.A.R.T.S</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Title -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Documents to Revise</h2>
+            <p class="text-gray-600">Please review the documents below and take appropriate action.</p>
+        </div>
+
+        <!-- Document List with Actions -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <ul class="divide-y divide-gray-200">
+                <li class="py-4 flex items-center justify-between">
+                    <div>
+                        <p class="font-medium text-gray-900">CIS44040 Report</p>
+                        <p class="text-sm text-gray-500">Revision Requested</p>
+                    </div>
+                    <div class="space-x-2">
+                        <button onclick="window.location.href='approve-cis44040.html'" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Approve</button>
+                        <button onclick="window.location.href='deny-cis44040.html'" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">Deny</button>
+<button onclick="window.location.href='revise-cis44040.html'" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">View Details</button>
+                    </div>
+                </li>
+                <li class="py-4 flex items-center justify-between">
+                    <div>
+                        <p class="font-medium text-gray-900">ESO17845 Proposal</p>
+                        <p class="text-sm text-gray-500">Revision Requested</p>
+                    </div>
+                    <div class="space-x-2">
+                        <button onclick="window.location.href='approve-eso17845.html'" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Approve</button>
+                        <button onclick="window.location.href='deny-eso17845.html'" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">Deny</button>
+<button onclick="window.location.href='revise-eso17845.html'" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">View Details</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+            &copy; 2024 D.A.R.T.S™. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
