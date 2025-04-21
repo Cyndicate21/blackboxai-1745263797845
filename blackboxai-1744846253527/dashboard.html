@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.A.R.T.S™ - Dashboard</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-red-600 shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-white text-2xl font-bold">D.A.R.T.S</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Welcome Section -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">Welcome to Your Dashboard</h1>
+            <p class="text-gray-600">Here's an overview of your documents and tasks.</p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <!-- Pending Documents -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="p-3 bg-blue-100 rounded-full">
+                        <i class="fas fa-file-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-gray-600 text-sm">Pending Documents</h2>
+                        <p class="text-2xl font-semibold text-gray-800">3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approved Documents -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="p-3 bg-green-100 rounded-full">
+                        <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-gray-600 text-sm">Approved Documents</h2>
+                        <p class="text-2xl font-semibold text-gray-800">12</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revisions Needed -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="p-3 bg-yellow-100 rounded-full">
+                        <i class="fas fa-exclamation-circle text-yellow-600 text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-gray-600 text-sm">Revisions Needed</h2>
+                        <p class="text-2xl font-semibold text-gray-800">2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Denied Documents -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center">
+                    <div class="p-3 bg-red-100 rounded-full">
+                        <i class="fas fa-times-circle text-red-600 text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-gray-600 text-sm">Denied Documents</h2>
+                        <p class="text-2xl font-semibold text-gray-800">1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Documents -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h2 class="text-xl font-semibold text-gray-800">Recent Documents</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Document</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-pdf text-red-500 mr-3"></i>
+                                    <div class="text-sm font-medium text-gray-900">CIS44040 Report</div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                    Revision Needed
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                Apr 21, 2024
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="revise-cis44040.html" class="text-red-600 hover:text-red-900">View Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-word text-blue-500 mr-3"></i>
+                                    <div class="text-sm font-medium text-gray-900">ESO17845 Proposal</div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                    Approved
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                Apr 20, 2024
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="review-eso17845.html" class="text-red-600 hover:text-red-900">View Details</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center text-gray-600 text-sm">
+            &copy; 2024 D.A.R.T.S™. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Navigation Menu Container -->
+    <div id="nav-menu" class="fixed top-0 left-0 h-full w-80 bg-white shadow-lg -translate-x-full z-50 overflow-y-auto transition-transform duration-300"></div>
+
+    <script src="nav.js"></script>
+</body>
+</html>
